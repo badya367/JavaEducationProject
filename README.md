@@ -2,5 +2,5 @@
 
 ## Модули
 
-1. AlgorithmsBooks
-2. LeetCode
+1. [AlgorithmsBooks](AlgorithmsBooks/README.md)
+2. [LeetCode](LeetCode/README.md)
