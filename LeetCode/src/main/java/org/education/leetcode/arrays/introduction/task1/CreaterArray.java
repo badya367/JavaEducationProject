@@ -5,16 +5,17 @@ import java.util.Scanner;
 
 public class CreaterArray {
     public static int inputArrayCapacity() {
+        int result;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введеите длину массива: ");
+        System.out.println("Введите длину массива: ");
         try {
-            return scanner.nextInt();
+            result = scanner.nextInt();
         }
         catch (InputMismatchException ex) {
             System.out.println("вам необходимо указать целочисленное значение");
-            inputArrayCapacity();
+            return inputArrayCapacity();
         }
-        return 0;
+        return result;
     }
     public static int[] generateArray(int arrayCapacity) {
         int[] createdArray = new int[arrayCapacity];
