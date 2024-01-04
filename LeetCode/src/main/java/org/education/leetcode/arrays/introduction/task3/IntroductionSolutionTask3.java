@@ -6,7 +6,7 @@ import java.util.Arrays;
  * [Task3]
  * [верните массив квадратов каждого числа из изначального массива, отсортированный в порядке возрастания.
  */
-public class Solution {
+public class IntroductionSolutionTask3 {
     /**
      *
      * @param nums - сгенерированный массив состоящий из чисел в диапазоне [-10000:10000]

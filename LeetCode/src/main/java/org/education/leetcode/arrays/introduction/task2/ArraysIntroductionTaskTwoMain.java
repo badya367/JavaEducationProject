@@ -1,6 +1,6 @@
 package org.education.leetcode.arrays.introduction.task2;
 
-import org.education.leetcode.arrays.introduction.CreaterArray;
+import org.education.leetcode.arrays.introduction.GeneratorArray;
 
 
 import java.util.Arrays;
@@ -9,10 +9,10 @@ import java.util.Arrays;
  */
 public class ArraysIntroductionTaskTwoMain {
     public static void main(String[] args) {
-        int arrayCapacity = CreaterArray.inputArrayCapacity();
-        int[] testArray = CreaterArray.generateArrayRandomNum(arrayCapacity);
+        int arrayCapacity = GeneratorArray.inputArrayCapacity();
+        int[] testArray = GeneratorArray.generateArrayRandomNum(arrayCapacity);
         System.out.println("Ваш массив для задания №2: " + Arrays.toString(testArray));
-        Solution test = new Solution();
+        IntroductionSolutionTask2 test = new IntroductionSolutionTask2();
         int numberWithEvenLength = test.findNumbers(testArray);
         System.out.println("Результат задания №2:" + numberWithEvenLength + " - количество чисел с четной длиной");
     }

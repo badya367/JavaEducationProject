@@ -6,7 +6,7 @@ import java.util.Random;
 /**
  * Класс генератор различных массивов
  */
-public class CreaterArray {
+public class GeneratorArray {
     /**
      * @return возращает число введённое пользователем, которое будет задавать длину массива
      */

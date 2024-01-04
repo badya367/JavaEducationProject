@@ -1,6 +1,6 @@
 package org.education.leetcode.arrays.introduction.task1;
 
-import org.education.leetcode.arrays.introduction.CreaterArray;
+import org.education.leetcode.arrays.introduction.GeneratorArray;
 
 import java.util.Arrays;
 
@@ -9,10 +9,10 @@ import java.util.Arrays;
  */
 public class ArraysIntroductionTaskOneMain {
     public static void main(String[] args) {
-        int arrayCapacity = CreaterArray.inputArrayCapacity();
-        int[] testArray = CreaterArray.generateArrayOnesAndZero(arrayCapacity);
+        int arrayCapacity = GeneratorArray.inputArrayCapacity();
+        int[] testArray = GeneratorArray.generateArrayOnesAndZero(arrayCapacity);
         System.out.println("Ваш массив для задания №1: " + Arrays.toString(testArray));
-        Solution test = new Solution();
+        IntroductionSolutionTask1 test = new IntroductionSolutionTask1();
         int maxConsecutiveOnes = test.findMaxConsecutiveOnes(testArray);
         System.out.println("Результат задания №1: " + maxConsecutiveOnes +
                 " единицы идущие друг за другом - это максимум");

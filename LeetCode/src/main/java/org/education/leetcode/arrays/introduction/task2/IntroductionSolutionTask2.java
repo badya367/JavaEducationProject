@@ -4,7 +4,7 @@ package org.education.leetcode.arrays.introduction.task2;
  * [Task2]
  * [Верните количество чисел с четным количеством цифр]
  */
-public class Solution {
+public class IntroductionSolutionTask2 {
     /**
      * @param nums - сгенерированный массив состоящий из положительных чисел (максимальное число - 100000)
      * @return resultFunc - количество чисел с четным количеством цифр

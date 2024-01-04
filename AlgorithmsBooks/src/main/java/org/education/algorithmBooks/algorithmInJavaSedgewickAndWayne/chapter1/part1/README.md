@@ -1,1 +1,2 @@
-1.[Творческая задача №1](task1/README.md)
+1. [Задачи](tasks/README.md)
+2. [Эксперементы](experements/README.md)

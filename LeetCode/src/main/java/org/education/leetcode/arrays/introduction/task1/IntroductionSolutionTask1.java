@@ -4,7 +4,7 @@ package org.education.leetcode.arrays.introduction.task1;
  * [Task1]
  * [верните максимальное количество 1 идущих друг за другом из массива]
  */
-public class Solution {
+public class IntroductionSolutionTask1 {
     /**
      *
      * @param nums - сгенерированный массив состоящий из 1 и 0
