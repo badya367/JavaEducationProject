@@ -1,4 +1,6 @@
-package org.education.leetcode.arrays.introduction;
+package org.education.leetcode.myGenerators.array;
+
+import org.education.leetcode.myGenerators.myExceptions.InvalidInputException;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -23,7 +25,14 @@ public class GeneratorArray {
         }
         return result;
     }
-
+    /**
+     *
+     * @param arrayCapacity - длина массива
+     * @return возращает пустой массив заданной длины
+     */
+    public static int[] generateEmptyArray(int arrayCapacity) {
+        return new int[arrayCapacity];
+    }
     /**
      *
      * @param arrayCapacity - длина массива
@@ -36,7 +45,19 @@ public class GeneratorArray {
         }
         return createdArray;
     }
-
+    /**
+     *
+     * @param arrayCapacity - длина массива
+     * @return возращает массив заданной длины из натуральных чисел.
+     */
+    public static int[] generateArrayNaturalNum(int arrayCapacity) {
+        int[] createdArray = new int[arrayCapacity];
+        Random random = new Random();
+        for (int i = 0; i < createdArray.length; i++) {
+            createdArray[i] = random.nextInt(10);
+        }
+        return createdArray;
+    }
     /**
      *
      * @param arrayCapacity - длина массива
@@ -50,7 +71,6 @@ public class GeneratorArray {
         }
         return createdArray;
     }
-
     /**
      *
      * @param arrayCapacity - длина массива
@@ -63,5 +83,19 @@ public class GeneratorArray {
             createdArray[i] = random.nextInt(20001) - 10000;
         }
         return createdArray;
+    }
+    /**
+     * @param array           - массив
+     * @param quantityElement - количество элементов для заполнения
+     *                        array[i] = [-10000:10000]
+     */
+    public static void fillingArray(int[] array, int quantityElement) throws InvalidInputException {
+        if (quantityElement > array.length){
+            throw new InvalidInputException("The quantityElement to insert is greater than the array.length");
+        }
+        Random random = new Random();
+        for (int i = 0; i < quantityElement; i++){
+            array[i] = random.nextInt(20001) - 10000;
+        }
     }
 }

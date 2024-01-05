@@ -1,6 +1,6 @@
 package org.education.leetcode.arrays.introduction.task2;
 
-import org.education.leetcode.arrays.introduction.GeneratorArray;
+import org.education.leetcode.myGenerators.array.GeneratorArray;
 
 
 import java.util.Arrays;

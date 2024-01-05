@@ -1,6 +1,6 @@
 package org.education.algorithmBooks.algorithmInJavaSedgewickAndWayne.chapter1.part1.tasks.task1;
 
-import org.education.leetcode.arrays.introduction.GeneratorArray;
+import org.education.leetcode.myGenerators.array.GeneratorArray;
 
 import java.util.Arrays;
 
