@@ -4,7 +4,9 @@ import org.education.leetcode.myGenerators.array.GeneratorArray;
 import org.education.leetcode.myGenerators.myExceptions.InvalidInputException;
 
 import java.util.Arrays;
-
+/**
+ * Класс для запуска задания №2 из главы Arrays.insertingItemsIntoAnArray
+ */
 public class ArraysInsertingTask2Main {
     public static void main(String[] args) {
         System.out.println("Массив №2");

@@ -3,7 +3,9 @@ package org.education.leetcode.arrays.insertingItemsIntoAnArray.task1;
 import org.education.leetcode.myGenerators.array.GeneratorArray;
 
 import java.util.Arrays;
-
+/**
+ * Класс для запуска задания №1 из главы Arrays.insertingItemsIntoAnArray
+ */
 public class ArraysInsertingTask1Main {
     public static void main(String[] args) {
         int arrayCapacity = GeneratorArray.inputArrayCapacity();

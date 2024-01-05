@@ -3,7 +3,9 @@ package org.education.algorithmBooks.algorithmInJavaSedgewickAndWayne.chapter1.p
 import org.education.leetcode.myGenerators.array.GeneratorArray;
 
 import java.util.Arrays;
-
+/**
+ * Класс для запуска задания №1 из algorithmBooks.algorithmInJavaSedgewickAndWayne.chapter1.part1.tasks.
+ */
 public class Chapter1Part1MainTask1 {
     public static void main(String[] args) {
         int[] testArray = GeneratorArray.generateArrayRandomNum(4);
