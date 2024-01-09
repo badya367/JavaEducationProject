@@ -85,6 +85,34 @@ public class GeneratorArray {
         return createdArray;
     }
     /**
+     *
+     * @param arrayCapacity - длина массива
+     * @param maxValuesInArray - максимальное значение для значения элемента в массиве
+     * @return возвращает массив из чисел в диапазоне [0:maxValuesInArray]
+     */
+    public static int[] generateArrayRandomNumWithCustomValues(int arrayCapacity, int maxValuesInArray) {
+        int[] createdArray = new int[arrayCapacity];
+        Random random = new Random();
+        for (int i = 0; i < createdArray.length; i++) {
+            createdArray[i] = random.nextInt(maxValuesInArray+1);
+        }
+        return createdArray;
+    }
+    /**
+     *
+     * @param arrayCapacity - длина массива
+     * @param maxValuesInArray - максимальное значение для значения элемента в массиве
+     * @return возвращает массив из чисел в диапазоне [-maxValuesInArray:maxValuesInArray]
+     */
+    public static int[] generateArrayRandomNumWithCustomValuesWithNegative(int arrayCapacity, int maxValuesInArray) {
+        int[] createdArray = new int[arrayCapacity];
+        Random random = new Random();
+        for (int i = 0; i < createdArray.length; i++) {
+            createdArray[i] = random.nextInt(maxValuesInArray+1) - maxValuesInArray/2;
+        }
+        return createdArray;
+    }
+    /**
      * @param array           - массив
      * @param quantityElement - количество элементов для заполнения
      *                        array[i] = [-10000:10000]
