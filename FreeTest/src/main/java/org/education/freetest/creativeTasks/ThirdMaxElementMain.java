@@ -69,9 +69,15 @@ public class ThirdMaxElementMain {
 
     public static int thirdMaxValueThroughTreeSet(NavigableSet<Integer> treeSet){
         if (treeSet.size() > 3){
-            treeSet.pollLast();
-            treeSet.pollLast();
-            return treeSet.last();
+            int counterElement = 0;
+            Iterator<Integer> iterator = treeSet.iterator();
+            while (iterator.hasNext()){
+                iterator.next();
+                counterElement++;
+                if (counterElement == treeSet.size()-3){
+                    return iterator.next();
+                }
+            }
         }
         return 0;
     }
