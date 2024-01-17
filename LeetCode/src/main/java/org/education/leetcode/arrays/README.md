@@ -5,4 +5,4 @@
 3. -[x] [Удаление элементов из массива](deletingItemsFromAnArray/README.md)
 4. -[x] [Поиск элементов](searchingItemsInArray/README.md)
 5. -[x] [Операции внутри массива](inPlaceOperations/README.md)
-6. -[ ] [Заключение]()
+6. -[ ] [Заключение](conclusion/README.md)
