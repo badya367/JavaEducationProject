@@ -1,7 +1,6 @@
-package org.education.freetest.creativeTasks.collection.arrayLists.task7;
+package org.education.freetest.creativeTasks.collection.comparatorTasks.task1;
 
-
-public class Person{
+public class Person implements Comparable<Person>{
     private String name;
     private int age;
 
@@ -32,5 +31,10 @@ public class Person{
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    @Override
+    public int compareTo(Person anotherPerson) {
+        return getName().compareTo(anotherPerson.getName());
     }
 }
