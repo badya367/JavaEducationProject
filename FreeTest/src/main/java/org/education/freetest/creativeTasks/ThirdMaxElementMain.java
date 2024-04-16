@@ -8,7 +8,7 @@ public class ThirdMaxElementMain {
     public static void main(String[] args) {
         int[] testArray = GeneratorArray.generateArrayRandomNumWithCustomValues(10, 20);
         int[] testArray2 = GeneratorArray.generateArrayRandomNumWithCustomValues(10, 20);
-        int[] testArray3 = GeneratorArray.generateArrayRandomNumWithCustomValues(10, 500);
+        int[] testArray3 = GeneratorArray.generateArrayRandomNumWithCustomValues(10, 20);
         //int[] testArray = {96, 434, 80, 292, 301, 356, 254, 450, 267, 91};
         //int[] testArray = {6, 20, 19, 8, 18, 19, 1, 0, 10, 10};
 
@@ -18,12 +18,16 @@ public class ThirdMaxElementMain {
         System.out.println("Сгенерированный массив для проверки через сортировку: " + Arrays.toString(testArray2));
         System.out.println("Результат: " + thirdMaxValueThroughSort(testArray2));
 
-        NavigableSet<Integer> testTreeSet = new TreeSet<>();
-        for (int element : testArray3){
-            testTreeSet.add(element);
+
+        System.out.println("Сгенерированная коллекция: " + Arrays.toString(testArray3));
+        //System.out.println("Результат: " + thirdMaxValueThroughTreeSet(testArray3));
+        try {
+            thirdMaxValueThroughTreeSet(testArray3);
         }
-        System.out.println("Сгенерированная коллекция: " + testTreeSet);
-        System.out.println("Результат: " + thirdMaxValueThroughTreeSet(testTreeSet));
+        catch (Exception e ){
+            throw new RuntimeException("dfgd", e);
+        }
+
     }
     public static int thirdMaxValueThroughIf(int[] values) {
         int maxValues1 = 0;
@@ -67,18 +71,19 @@ public class ThirdMaxElementMain {
         return maxValue3;
     }
 
-    public static int thirdMaxValueThroughTreeSet(NavigableSet<Integer> treeSet){
-        if (treeSet.size() > 3){
-            int counterElement = 0;
-            Iterator<Integer> iterator = treeSet.iterator();
-            while (iterator.hasNext()){
-                iterator.next();
-                counterElement++;
-                if (counterElement == treeSet.size()-3){
-                    return iterator.next();
-                }
+    public static int thirdMaxValueThroughTreeSet(int[] array){
+        TreeSet<Integer> treeSet = new TreeSet<>();
+        //Arrays.asList(array).stream().forEach(System.out::print);
+        for (int element : array) {
+            treeSet.add(element);
+            if(treeSet.size() > 3){
+                treeSet.pollFirst();
             }
+
         }
-        return 0;
+        if(true){
+            throw new RuntimeException("Бла бла");
+        }
+        return treeSet.isEmpty() ? 0 : treeSet.pollFirst();
     }
 }

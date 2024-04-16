@@ -1,0 +1,3 @@
+Person(personId=1, isMale=true, firstName=Alex, lastName=Pervov, age=30, numberPhone=0, numberCard=0)
+Person(personId=2, isMale=true, firstName=Bob, lastName=Vtorov, age=27, numberPhone=0, numberCard=0)
+Person(personId=3, isMale=true, firstName=Steve, lastName=Tretev, age=44, numberPhone=0, numberCard=0)
