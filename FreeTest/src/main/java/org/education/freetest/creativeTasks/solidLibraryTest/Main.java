@@ -1,11 +1,13 @@
 package org.education.freetest.creativeTasks.solidLibraryTest;
 
 
-import org.education.freetest.creativeTasks.solidLibraryTest.book.Book;
-import org.education.freetest.creativeTasks.solidLibraryTest.book.BookManagerImpl;
-import org.education.freetest.creativeTasks.solidLibraryTest.book.IBookManager;
-import org.education.freetest.creativeTasks.solidLibraryTest.library.BookRepository;
+import org.education.freetest.creativeTasks.solidLibraryTest.models.Book;
+import org.education.freetest.creativeTasks.solidLibraryTest.services.api.IBookManagerExtendedApi;
+import org.education.freetest.creativeTasks.solidLibraryTest.services.impl.BookManagerImpl;
+import org.education.freetest.creativeTasks.solidLibraryTest.services.api.IBookManager;
+import org.education.freetest.creativeTasks.solidLibraryTest.services.api.BookRepository;
 import org.education.freetest.creativeTasks.solidLibraryTest.library.Library;
+import org.education.freetest.creativeTasks.solidLibraryTest.services.impl.BookManagerTwo;
 
 import java.util.Collection;
 
@@ -15,10 +17,15 @@ public class Main {
         System.out.println("|SOLID Library Test Project|");
         System.out.println("----------------------------");
         // Создаем библиотеку, которая реализует BookRepository
-        BookRepository library = new Library();
+        BookRepository library = Library.INSTANCE;
+
 
         // Создаем BookManagerImpl и передаем ему BookRepository
         IBookManager bookManager = new BookManagerImpl(library);
+        IBookManager bookManagerTwo = new BookManagerTwo(library);
+        IBookManagerExtendedApi bookManagerExtendedApi = new BookManagerTwo(library);
+        BookManagerImpl bookManager1 = new BookManagerTwo(library);
+
 
         // Создаем книги
         Book book1 = new Book("1", "The Great Gatsby", "F. Scott Fitzgerald", 1925, "Novel");

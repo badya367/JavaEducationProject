@@ -1,8 +1,10 @@
-package org.education.freetest.creativeTasks.solidLibraryTest.book;
+package org.education.freetest.creativeTasks.solidLibraryTest.services.impl;
 
-import org.education.freetest.creativeTasks.solidLibraryTest.library.BookRepository;
+import org.education.freetest.creativeTasks.solidLibraryTest.models.Book;
+import org.education.freetest.creativeTasks.solidLibraryTest.services.api.BookRepository;
+import org.education.freetest.creativeTasks.solidLibraryTest.services.api.IBookManager;
 
-public class BookManagerImpl implements IBookManager{
+public class BookManagerImpl implements IBookManager {
     BookRepository bookRepository;
 
     public BookManagerImpl(BookRepository bookRepository) {

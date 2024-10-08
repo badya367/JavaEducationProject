@@ -1,7 +1,6 @@
-package org.education.freetest.creativeTasks.solidLibraryTest.user;
+package org.education.freetest.creativeTasks.solidLibraryTest.models;
 
 import lombok.Getter;
-import org.education.freetest.creativeTasks.solidLibraryTest.book.Book;
 
 import java.util.ArrayList;
 import java.util.List;

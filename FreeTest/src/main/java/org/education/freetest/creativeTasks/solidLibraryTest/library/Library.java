@@ -1,13 +1,18 @@
 package org.education.freetest.creativeTasks.solidLibraryTest.library;
 
-import org.education.freetest.creativeTasks.solidLibraryTest.book.Book;
+import org.education.freetest.creativeTasks.solidLibraryTest.models.Book;
+import org.education.freetest.creativeTasks.solidLibraryTest.services.api.BookRepository;
 
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Library implements BookRepository{
+public class Library implements BookRepository {
     private Map<String,Book> books = new HashMap<>();
+    public static final Library INSTANCE = new Library();
+    private Library(){
+
+    }
     @Override
     public void addBook(Book book) {
         books.put(book.getId(),book);

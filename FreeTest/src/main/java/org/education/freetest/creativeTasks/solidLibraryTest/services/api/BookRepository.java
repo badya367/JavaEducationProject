@@ -1,6 +1,6 @@
-package org.education.freetest.creativeTasks.solidLibraryTest.library;
+package org.education.freetest.creativeTasks.solidLibraryTest.services.api;
 
-import org.education.freetest.creativeTasks.solidLibraryTest.book.Book;
+import org.education.freetest.creativeTasks.solidLibraryTest.models.Book;
 
 import java.util.Collection;
 

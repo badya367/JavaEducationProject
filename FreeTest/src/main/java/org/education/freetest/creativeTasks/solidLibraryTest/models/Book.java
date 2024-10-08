@@ -1,14 +1,16 @@
-package org.education.freetest.creativeTasks.solidLibraryTest.book;
+package org.education.freetest.creativeTasks.solidLibraryTest.models;
 
+import lombok.Data;
 import lombok.Getter;
 
-@Getter
+@Data
 public class Book {
     private String id;
     private String title;
     private String author;
     private int year;
     private String genre;
+    private String location;
 
     public Book(String id, String title, String author, int year, String genre) {
         this.id = id;
