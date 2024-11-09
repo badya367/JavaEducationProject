@@ -1,6 +1,6 @@
-package org.education.freetest.creativeTasks.patterns.builder.computerMaker.EnumClassesForCompParametrs;
+package org.education.freetest.creativeTasks.patterns.builder.computerMaker;
 
-import org.education.freetest.creativeTasks.patterns.builder.computerMaker.Computer;
+import org.education.freetest.creativeTasks.patterns.builder.computerMaker.EnumClassesForCompParametrs.*;
 
 public class ComputerBuilder {
     private Processor processor;
