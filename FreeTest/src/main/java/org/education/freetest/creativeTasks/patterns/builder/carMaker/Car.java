@@ -32,4 +32,24 @@ public class Car {
                 ", additionalOptionsList=" + additionalOptionsList +
                 '}';
     }
+
+    public void setColor(Color color) {
+        this.color = color;
+    }
+
+    public void setEngineType(EngineType engineType) {
+        this.engineType = engineType;
+    }
+
+    public void setGearBoxType(GearBoxType gearBoxType) {
+        this.gearBoxType = gearBoxType;
+    }
+
+    public void setNumberOfDoors(NumberOfDoors numberOfDoors) {
+        this.numberOfDoors = numberOfDoors;
+    }
+
+    public void setAdditionalOptionsList(List<AdditionalOptions> additionalOptionsList) {
+        this.additionalOptionsList = additionalOptionsList;
+    }
 }

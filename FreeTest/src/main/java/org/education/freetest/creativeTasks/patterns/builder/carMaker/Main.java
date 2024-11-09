@@ -14,5 +14,12 @@ public class Main {
                 .build();
 
         System.out.println(car);
+
+        Car carTest = new CarBuilder(Brand.BMW)
+                .build();
+        System.out.println(carTest);
+
+        carTest.setColor(Color.RED);
+        System.out.println(carTest);
     }
 }
